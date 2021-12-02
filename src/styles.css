@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 35%;
+}
+.btn-all {
+  float: left;
+  width: 44px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 20px 2px;
+}
+.col-40 {
+  float: left;
+  width: 38%;
+  margin-right: 8px;
+}
+.col-20 {
+  float: left;
+  width: 20%;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  padding: 12px;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.shop {
+  display: inline-block;
+  margin: 2px;
+  border: 1px solid gray;
+  width: 30%;
+  text-align: center;
+}
+.shop-container {
+  background-color: red;
+  margin: 2px;
+  padding: 10px;
+}
+.shop-form {
+  width: 100%;
+  background-color: #f8f8f8;
+  margin: 2px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 14px 2px #c0c0c0;
+}
+.title {
+  text-align: center;
+}
+.col-btn {
+  text-align: right;
+}
+.btn-submit {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.addshop-container {
+  margin-bottom: 2em;
+}
+.filtered-container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 96%;
+  }
+  .filtered-container {
+    width: 100%;
+    margin: 0;
+  }
+  .shop-form {
+    width: 100%;
+  }
+  .col-40 {
+    width: 48%;
+  }
+  .col-20 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .shop-form {
+    width: 82%;
+    margin: auto;
+  }
+}
+@media (min-width: 968px) {
+  .container {
+    width: 90%;
+  }
+  .shop-form {
+    width: 62%;
+    margin: auto;
+  }
+}
